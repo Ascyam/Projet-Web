@@ -17,33 +17,34 @@
         <table align="center">
             <tbody>
                 <tr>
-                    <td><button onclick="Moving(1)" class="Rempli">1</button></td>
-                    <td><button onclick="Moving(2)" class="Rempli">2</button></td>
-                    <td><button onclick="Moving(3)" class="Rempli">3</button></td>
-                    <td><button onclick="Moving(4)" class="Rempli">4</button></td>
+                    <td><button id="x0" onclick="Moving(0)" class="Rempli"></button></td>
+                    <td><button id="x1" onclick="Moving(1)" class="Rempli"></button></td>
+                    <td><button id="x2" onclick="Moving(2)" class="Rempli"></button></td>
+                    <td><button id="x3" onclick="Moving(3)" class="Rempli"></button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="Moving(5)" class="Rempli">5</button></td>
-                    <td><button onclick="Moving(6)" class="Rempli">6</button></td>
-                    <td><button onclick="Moving(7)" class="Rempli">7</button></td>
-                    <td><button onclick="Moving(8)" class="Rempli">8</button></td>
+                    <td><button id="x4"onclick="Moving(4)" class="Rempli"></button></td>
+                    <td><button id="x5" onclick="Moving(5)" class="Rempli"></button></td>
+                    <td><button id="x6" onclick="Moving(6)" class="Rempli"></button></td>
+                    <td><button id="x7" onclick="Moving(7)" class="Rempli"></button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="Moving(9)" class="Rempli">9</button></td>
-                    <td><button onclick="Moving(10)" class="Rempli">10</button></td>
-                    <td><button onclick="Moving(11)" class="Rempli">11</button></td>
-                    <td><button onclick="Moving(12)" class="Rempli">12</button></td>
+                    <td><button id="x8" onclick="Moving(8)" class="Rempli"></button></td>
+                    <td><button id="x9" onclick="Moving(9)" class="Rempli"></button></td>
+                    <td><button id="x10" onclick="Moving(10)" class="Rempli"></button></td>
+                    <td><button id="x11" onclick="Moving(11)" class="Rempli"></button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="Moving(13)" class="Rempli">13</button></td>
-                    <td><button onclick="Moving(14)" class="Rempli">14</button></td>
-                    <td><button onclick="Moving(15)" class="Rempli">15</button></td>
-                    <td><button onclick="Moving(0)" class="Vide">0</button></td>
+                    <td><button id="x12" onclick="Moving(12)" class="Rempli"></button></td>
+                    <td><button id="x13" onclick="Moving(13)" class="Rempli"></button></td>
+                    <td><button id="x14" onclick="Moving(14)" class="Rempli"></button></td>
+                    <td><button id="x15" onclick="Moving(15)" class="Rempli"></button></td>
                 </tr>
             </tbody>
         </table>
+        <div id="z"></div>
         <div class="Rejouer">
-            <button onclick="shuffle()">Rejouer</button>
+            <button onclick="shuffle(TableI)">Rejouer</button>
         </div>
     </body>
 </html>
