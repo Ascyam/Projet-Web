@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 400;
     line-height: 1.5;
     color: white;
@@ -16,4 +16,17 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #4c5eff;
+    color: white;
+    margin: 10px 10px;
+}
+
+.menu a:hover {
+    background-color: #6070ff;
 }
