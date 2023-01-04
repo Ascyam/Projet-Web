@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh;
-  width: 300px;
+  width: 350px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -37,4 +37,10 @@ body {
 
 .menu a:hover {
     background-color: #6070ff;
+}
+
+.explication-text{
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 500;
 }
