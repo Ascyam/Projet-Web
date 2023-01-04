@@ -9,13 +9,21 @@ body {
     color: white;
     text-align: left;
     background-color: #191b1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .menu {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100vh;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .menu a {
