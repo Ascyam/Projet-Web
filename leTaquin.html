@@ -1,50 +1,73 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-    <head>
-        <title>Jeu Alan</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="leTaquin.css">
-        <a href="Menu.html">Menu</a>
-        <a href="leTaquin.html">Le Taquin</a>
-        <a href="Jeu2.html">Jeu2</a>
-        <a href="Jeu3.html">Jeu3</a>
-        <a href="Jeu4.html">Jeu4</a>
-        <script type="text/javascript" src="leTaquin.js"></script>
-    </head>
-    <hr>
-    <body>
-        <table align="center">
-            <tbody>
-                <tr>
-                    <td><button id="x0" onclick="Moving(0)" class="Rempli"></button></td>
-                    <td><button id="x1" onclick="Moving(1)" class="Rempli"></button></td>
-                    <td><button id="x2" onclick="Moving(2)" class="Rempli"></button></td>
-                    <td><button id="x3" onclick="Moving(3)" class="Rempli"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="x4"onclick="Moving(4)" class="Rempli"></button></td>
-                    <td><button id="x5" onclick="Moving(5)" class="Rempli"></button></td>
-                    <td><button id="x6" onclick="Moving(6)" class="Rempli"></button></td>
-                    <td><button id="x7" onclick="Moving(7)" class="Rempli"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="x8" onclick="Moving(8)" class="Rempli"></button></td>
-                    <td><button id="x9" onclick="Moving(9)" class="Rempli"></button></td>
-                    <td><button id="x10" onclick="Moving(10)" class="Rempli"></button></td>
-                    <td><button id="x11" onclick="Moving(11)" class="Rempli"></button></td>
-                </tr>
-                <tr>
-                    <td><button id="x12" onclick="Moving(12)" class="Rempli"></button></td>
-                    <td><button id="x13" onclick="Moving(13)" class="Rempli"></button></td>
-                    <td><button id="x14" onclick="Moving(14)" class="Rempli"></button></td>
-                    <td><button id="x15" onclick="Moving(15)" class="Rempli"></button></td>
-                </tr>
-            </tbody>
-        </table>
-        <div id="z"></div>
-        <div class="Rejouer">
-            <button onclick="shuffle(TableI)">Rejouer</button>
+
+<head>
+    <title>Jeu Alan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="leTaquin.css">
+    <script type="text/javascript" src="leTaquin.js"></script>
+</head>
+
+<body onload="shuffle(TableI)">
+    <div class="header">
+        <a href="Menu.html"><i class="fa fa-arrow-left"></i> Retour à l'accueil</a>
+        <div class="left">
+            <a href="leTaquin.html">Le Taquin</a>
+            <a href="Jeu2.html">Jeu2</a>
+            <a href="Jeu3.html">Jeu3</a>
+            <a href="Jeu4.html">Jeu4</a>
         </div>
-    </body>
+    </div>
+    <hr>
+    <p id="tries" class="tries"></p>
+    <table align="center">
+        <tbody class="grid">
+            <tr>
+                <td class="item"><button id="x0" onclick="Moving(0)" class="Rempli"></button></td>
+                <td class="item"><button id="x1" onclick="Moving(1)" class="Rempli"></button></td>
+                <td class="item"><button id="x2" onclick="Moving(2)" class="Rempli"></button></td>
+                <td class="item"><button id="x3" onclick="Moving(3)" class="Rempli"></button></td>
+            </tr>
+            <tr>
+                <td class="item"><button id="x4" onclick="Moving(4)" class="Rempli"></button></td>
+                <td class="item"><button id="x5" onclick="Moving(5)" class="Rempli"></button></td>
+                <td class="item"><button id="x6" onclick="Moving(6)" class="Rempli"></button></td>
+                <td class="item"><button id="x7" onclick="Moving(7)" class="Rempli"></button></td>
+            </tr>
+            <tr>
+                <td class="item"><button id="x8" onclick="Moving(8)" class="Rempli"></button></td>
+                <td class="item"><button id="x9" onclick="Moving(9)" class="Rempli"></button></td>
+                <td class="item"><button id="x10" onclick="Moving(10)" class="Rempli"></button></td>
+                <td class="item"><button id="x11" onclick="Moving(11)" class="Rempli"></button></td>
+            </tr>
+            <tr>
+                <td class="item"><button id="x12" onclick="Moving(12)" class="Rempli"></button></td>
+                <td class="item"><button id="x13" onclick="Moving(13)" class="Rempli"></button></td>
+                <td class="item"><button id="x14" onclick="Moving(14)" class="Rempli"></button></td>
+                <td class="item"><button id="x15" onclick="Moving(15)" class="Rempli"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="replay-menu" class="replay-menu">
+        <div class="replay">
+            <button onclick="shuffle(TableI)"><i class="fa fa-refresh"></i> Reset</button>
+        </div>
+    </div>
+    <div class="idea">
+        <i class="fa fa-lightbulb-o"></i>
+        <p id="idea-text" class="idea-text"></p>
+    </div>
+    <div class="explication-container">
+        <div class="explication">
+            <div class="explication-icon">
+                <i class="fa fa-question-circle"></i>
+            </div>
+            <div class="explication-text">
+                Le jeu du taquin est un puzzle à résoudre en glissant des tuiles sur une grille pour remettre les tuiles
+                dans l'ordre croissant. Le but est de réussir à le faire en moins de coup possible.
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
