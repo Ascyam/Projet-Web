@@ -50,70 +50,76 @@ body {
     margin: 0 5px;
 }
 
-.tries {
-    text-align: center;
-    margin-top: 50px;
-    color: gray;
-}
-
-.item button {
-    font-size: 50px;
-    width: 100px;
-    height: 100px;
-    border: none;
-    border-radius: 20px;
-    background-color: white;
-    color: #272a34;
-    margin: 5px;
-}
-
-.replay-menu {
+H1 {
+    text-align : center;
+    font-size : 35px;}
+.head {
+    text-align : center;
+    font-size: 25px;
     display: flex;
-    width: calc(100%);
-    margin: 20px 0;
-    justify-content: center;
-    flex-direction: row-reverse;
-}
-
-.replay-menu .win {
-    display: flex;
+    flex-direction: column;
     align-items: center;
+}
+img{
+    width : 10%;}
+input:invalid+span:after {
+    content: "\002717 ";
+    padding-left: 5px;}
+input:valid+span:after {
+    content: '\002713';
+    padding-left: 5px;}
+.NvPartie {
+    display: flex;
+    width: 300px;
+    margin: 30px 0;
     justify-content: center;
-    background: white;
-    border-radius: 25px;
-    color: #4c5eff;
-    width: 350px;
-    font-weight: 600;
-}
-
-.replay-menu .replay {
-    width: 90px;
-    margin-left: 5px;
-    text-align: right;
-}
-
-.replay-menu .replay button {
     border: none;
     background-color: #4c5eff;
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 12px 50px;
     color: white;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-size: 20px;
 }
 
-.replay-menu .replay button:hover {
+.NvPartie:hover{
     background-color: #6070ff;
 }
 
-.idea {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+i {
+    margin-right: 15px;
+  }
+
+.jeu{
+    text-align: center;
 }
 
-.idea-text {
-    margin-left: 7px;
+.ObjectToFind {
+    font-size: 25px;
+}
+.result {
+    font-size: 20px;
+    display: flex;
+    background-color: white;
+    color: #272a34;
+    border-radius: 20px;
+    padding: 10px;
+    width: 700px;
+    align-items: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.number {
+    font-size: 20px;
+}
+.try {
+    font-size: 15px;
 }
 
 .explication-container {
@@ -133,6 +139,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     width: 550px;
+    align-items: center;
 }
 
 .explication .explication-icon {
@@ -147,10 +154,7 @@ body {
     font-weight: 500;
 }
 
-.game-container {
-    height: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.button {
+    border-radius: 20px;
+    height: 30px;
 }

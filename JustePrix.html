@@ -1,0 +1,45 @@
+<head>
+    <title>Juste Prix</title>
+    <link rel="stylesheet" type="text/css" href="JustePrix.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><i class="fa fa-arrow-left"></i> Retour à l'accueil</a>
+        <div class="left">
+            <a href="leTaquin.html">Le Taquin 🔢</a>
+            <a href="JustePrix.html">Le Juste Prix 💵</a>
+            <a href="Wordle.html">Wordle 🟩</a>
+            <a href="lePendu.html">Le Pendu 💀</a>
+        </div>
+    </div>
+    <hr>
+    <div class="Head">
+        <H1>Le Juste Prix</H1>
+        <img src="./ico.png">
+        <button class="NvPartie" onclick="Reset()"><i class="fa fa-refresh"></i>Nouvelle partie</button>
+    </div>
+    <hr>
+    <div class="jeu">
+        <p class="ObjectToFind"></p>
+        <form onsubmit="Valider(); return false;">
+            <input class="button" type="number" id="number" required pattern="[1-9][0-9]{0,12}" min="1" max="9999999999999">
+            <span class="validity"></span>
+            <button id="flemme" class="button" name="valider" type="submit">Valider</button>
+        </form>
+        <p class="result">Proposez un prix dans la case ci-dessus.</p>
+        <p class="try">Nombre d'essais : 0</p>
+    </div>
+
+    <script type="text/javascript" src="./JustePrix.js"></script>
+    <div class="explication-container">
+        <div class="explication">
+            <div class="explication-icon">
+                <i class="fa fa-question-circle"></i>
+            </div>
+            <div class="explication-text">
+                Bienvenue dans le juste prix ! Le principe est simple : vous devez deviner le prix d'un objet.
+                A chaque essai le maitre du jeu vous indiquera si vous êtes au dessus ou en dessous du prix exact.
+            </div>
+        </div>
+    </div>
+</body>

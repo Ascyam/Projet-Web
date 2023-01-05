@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JS</title>
+        <link rel="stylesheet" type="text/css" href="lePendu.css">
+    </head>
+    <body onload="game()">
+        <div class="header">
+            <a href="index.html"><i class="fa fa-arrow-left"></i> Retour à l'accueil</a>
+            <div class="left">
+                <a href="leTaquin.html">Le Taquin 🔢</a>
+                <a href="JustePrix.html">Le Juste Prix 💵</a>
+                <a href="Wordle.html">Wordle 🟩</a>
+                <a href="lePendu.html">Le Pendu 💀</a>
+            </div>
+        </div>
+        <hr>
+        <div class="game-container">
+            <div class="title-container">
+                <h1>Le Pendu</h1>
+            </div>
+        </div>
+        <div class="full">
+            <br>
+            <div class="game">Entrez votre lettre puis appuyez sur ENTER : </div>
+            <div class="inpt" id="Input"><input  type="text" id="userInput"  maxlength="1"/></div>
+            <div class="game" id="demo"></div>
+            <div class="imag" id="impend"><img id="image" src="imgPendu/img0.png"></div>
+            <div class="game" id="vic"></div>
+            <script type="text/javascript" src="lePendu.js"></script>
+            <button id="startInput" class="startInput" style="visibility: hidden;" onclick="game()"> <i class="fa fa-refresh"></i>Nouvelle partie</button>
+            <div class="explication-container">
+                <div class="explication">
+                    <div class="explication-icon">
+                        <i class="fa fa-question-circle"></i>
+                    </div>
+                    <div class="explication-text">
+                        Le jeu du Pendu est un jeu de devinette où un mot est choisi au hasard et le joueur doit essayer de deviner les lettres du mot. 
+                        Vous avez 8 tentatives en cas d'erreur.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

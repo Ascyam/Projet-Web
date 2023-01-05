@@ -108,13 +108,13 @@ const checkRow = () => {
     if (currentTile > 4) {
         flipTile()
         if (wordle == guess) {
-            showMessage('💪 Bravo vous avez trouvé le mot 🏆')
+            showMessage('💪 Bravo, vous avez trouvé le mot 🏆')
             isGameOver = true
             return
         } else {
             if (currentRow >= 5) {
                 isGameOver = false
-                showMessage('Dommage pour vous')
+                showMessage('Vous avez échoué ❌')
                 return
             }
             if (currentRow < 5) {
