@@ -155,6 +155,8 @@ i {
 }
 
 .button {
+    border:0;
+    padding: 5px;
     border-radius: 20px;
     height: 30px;
 }
