@@ -109,7 +109,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin: 0;
-    width: 230px;
+    width: 276px;
     text-align: center;
     background: white;
     color: #4c5eff;
@@ -119,11 +119,11 @@ body {
 .message-container a {
     background: #4c5eff;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     text-decoration: none;
-    width: 60px;
+    width: 81px;
     padding: 10px;
-    margin-left: 4px;
+    margin-left: 10px;
 }
 
 .tile.flip {

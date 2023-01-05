@@ -73,7 +73,6 @@ keys.forEach(key => {
     keyboard.append(buttonElement)
 })
 const handleClick = (key) => {
-    console.log('clicked', key)
     if (key === '<<') {
         deleteLetter()
         return
@@ -91,7 +90,6 @@ const addLetter = (letter) => {
         guessRows[currentRow][currentTile] = letter
         tile.setAttribute('data', letter)
         currentTile++
-        console.log('guessRows', guessRows)
     }
 }
 
@@ -108,10 +106,9 @@ const deleteLetter = () => {
 const checkRow = () => {
     const guess = guessRows[currentRow].join('')
     if (currentTile > 4) {
-        console.log('le mot est' + wordle)
         flipTile()
         if (wordle == guess) {
-            showMessage('Bravo vous avez trouvé le mot')
+            showMessage('💪 Bravo vous avez trouvé le mot 🏆')
             isGameOver = true
             return
         } else {
@@ -133,8 +130,8 @@ const showMessage = (message) => {
     keyboard.remove();
     messageDisplay.append(messageElement)
     const messageButton = document.createElement('a');
-    messageButton.textContent = "Rejouer";
-    messageButton.setAttribute("href", ".");
+    messageButton.innerHTML = '<i class="fa fa-refresh"></i> Rejouer';
+    messageButton.setAttribute("href", "Wordle.html");
     messageDisplay.append(messageButton);
     //setTimeout(() => messageDisplay.removeChild(messageElement), 2000)
 }
@@ -162,5 +159,4 @@ const flipTile = () => {
         }, 500 * index)
     })
 }
-
 
