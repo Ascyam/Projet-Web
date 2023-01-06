@@ -49,7 +49,7 @@ function Reset() {
 
 function Valider() {
   let Number = parseInt(document.getElementById("number").value);
-
+  document.getElementById('vanish').style.visibility="hidden";
   if (reset === 0) {
     nbEssai = nbEssai + 1;
     if (Number === NumberToFind) {

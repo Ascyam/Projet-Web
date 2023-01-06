@@ -192,6 +192,7 @@ function Deplacement (number) {
 
 function Moving (number) {
   Deplacement(number);
+  document.getElementById('vanish').style.visibility="hidden";
   Maj();
   Fin();
 }

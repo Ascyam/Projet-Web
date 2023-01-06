@@ -7,8 +7,25 @@ var word=['SUPER','JOUER','AIMER','PARIS','VOLER','HUSKY','FIXER','BASSE','PIPAS
 'CABLE','CAPOT','CARGO','CANON','BRAVO','CAIRE','COMME','CRACK','DEFIS','DATES',
 'DRAME','DUBAI','ETAGE','STAGE','FAMAS','FRAIS','GACHE','GALOP','CREER','ACCES',
 'ABORD','ABDOS','ACNES','FACHE','DUQUE','AJOUT','CHAUD','FROID','AILES','CHEFS'];
+ 
 const wordle = word[Math.floor(Math.random()*word.length)]
+//var wordle = "TEST";
 
+/* function fileToArray(file) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if(rawFile.readyState === 4) {
+            if(rawFile.status === 200 || rawFile.status == 0) {
+                var allText = rawFile.responseText;
+                word = allText.split("\n");
+                wordle=word[Math.floor(Math.random()*word.length)]
+            }
+        }
+    }
+} */
+
+//fileToArray("fiveLetterWords.txt");
 
 const keys = [
     'Q',
@@ -84,6 +101,7 @@ const handleClick = (key) => {
     addLetter(key)
 }
 const addLetter = (letter) => {
+    document.getElementById('vanish').style.visibility="hidden";
     if (currentTile < 5 && currentRow < 6){
         const tile = document.getElementById('guessRow-' + currentRow + '-tile-' + currentTile)
         tile.textContent = letter

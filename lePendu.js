@@ -59,6 +59,7 @@ function IterMot(mot,lettres,errors){
 
 function Submit(event){
     let arrayImg = ["img10.png"];//création du tableau d'image
+    document.getElementById('vanish').style.visibility="hidden";
     for (let i = 1; i < 9; i++) {
         arrayImg.push("imgPendu/img"+String(i)+".png");
       }
